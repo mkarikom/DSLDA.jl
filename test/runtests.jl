@@ -1,6 +1,6 @@
 using DSLDA
 using Test, Statistics, StatsBase, Random, Distributions, CSV, DataFrames
-using Distributed, CUDA, SharedArrays
+using Distributed, SharedArrays
 
 nwork = 4
 while length(workers()) < nwork
