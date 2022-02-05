@@ -1,4 +1,4 @@
-name = "dsLDA"
+name = "DSLDA"
 uuid = "84443b02-f120-4e83-b3f9-d8b671af1397"
 authors = ["Matt Karikomi <mattkarikomi@gmail.com> and contributors"]
 version = "0.2.1"
