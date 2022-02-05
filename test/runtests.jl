@@ -26,8 +26,8 @@ end
 @testset "deconvolution: baron" begin
   data_dir = joinpath(@__DIR__,"data","baron")
   
-  C_fn = joinpath(data_dir,"BaronSC.H.isletVST_C.csv")
-  pDataC_fn = joinpath(data_dir,"BaronSC.H.isletVST_pDataC.csv")
+  C_fn = joinpath(data_dir,"BaronSC.DM.isletVST_C.csv")
+  pDataC_fn = joinpath(data_dir,"BaronSC.DM.isletVST_pDataC.csv")
   thetabenchmark=nothing
   
   # sc metadata
@@ -85,5 +85,6 @@ end
       thinning=5,
       rmchains=true
     )
+  print(sqrt(mean((jl_output[1].-Matrix(trueP[:,2:end])).^2)))
   @test size(jl_output[1]) == size(trueP[:,2:end])
 end
