@@ -1,4 +1,4 @@
-module dsLDA
+module DSLDA
 
 using Distributions, StatsBase, Statistics, SpecialFunctions
 using LinearAlgebra, Distributed
