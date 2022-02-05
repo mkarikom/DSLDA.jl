@@ -24,7 +24,7 @@ function fillpb(scMeta,scReads,trueP;ncells=100,celltypes=["alpha","beta","gamma
 end
 
 @testset "deconvolution: baron" begin
-  data_dir = "test/data/baron"
+  data_dir = joinpath(@__DIR__,"data","baron")
   
   C_fn = joinpath(data_dir,"BaronSC.H.isletVST_C.csv")
   pDataC_fn = joinpath(data_dir,"BaronSC.H.isletVST_pDataC.csv")
