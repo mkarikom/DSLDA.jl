@@ -1,2 +1,2 @@
-# DSLDA.jl
+# DistributedStwdLDA
 distributed, static topic/word LDA

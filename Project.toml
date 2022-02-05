@@ -1,4 +1,4 @@
-name = "DSLDA"
+name = "DistributedStwdLDA.jl"
 uuid = "4f7c0122-5260-4c96-aca3-bf9f51513501"
 authors = ["Matt Karikomi <mattkarikomi@gmail.com> and contributors"]
 version = "0.2.1"

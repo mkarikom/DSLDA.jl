@@ -1,4 +1,4 @@
-using DSLDA
+using DistributedStwdLDA
 using Test, Statistics, StatsBase, Random, Distributions, CSV, DataFrames
 using Distributed, SharedArrays
 
@@ -7,7 +7,7 @@ while length(workers()) < nwork
     addprocs(1)
 end
 
-@everywhere using DSLDA
+@everywhere using DistributedStwdLDA
 
 function fillpb(scMeta,scReads,trueP;ncells=100,celltypes=["alpha","beta","gamma","delta"])
   pbulk = zeros(Int,size(trueP)[1],size(scReads)[2]-1)
