@@ -1,4 +1,4 @@
-using dsLDA,Survival
+using DSLDA,Survival
 using Test, Statistics, StatsBase, Random, Distributions, CSV, DataFrames
 using Distributed, CUDA, SharedArrays
 
