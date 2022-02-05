@@ -7,7 +7,7 @@ while length(workers()) < nwork
     addprocs(1)
 end
 
-@everywhere using DistributedArrays,dsLDA
+@everywhere using DSLDA
 
 function fillpb(scMeta,scReads,trueP;ncells=100,celltypes=["alpha","beta","gamma","delta"])
   pbulk = zeros(Int,size(trueP)[1],size(scReads)[2]-1)
